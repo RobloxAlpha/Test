@@ -1,0 +1,71 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Main = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local sa = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
+local executespeed = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local ja = Instance.new("TextBox")
+local UICorner_4 = Instance.new("UICorner")
+
+--Properties:
+
+Main.Name = "Main"
+Main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Main.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = Main
+Frame.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+Frame.Position = UDim2.new(0.269320846, 0, 0.350877196, 0)
+Frame.Size = UDim2.new(0, 571, 0, 486)
+
+UICorner.Parent = Frame
+
+sa.Name = "sa"
+sa.Parent = Frame
+sa.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+sa.Position = UDim2.new(0.0420315228, 0, 0.150205761, 0)
+sa.Size = UDim2.new(0, 525, 0, 38)
+sa.ClearTextOnFocus = false
+sa.Font = Enum.Font.SourceSans
+sa.Text = "Speed Amount"
+sa.TextColor3 = Color3.fromRGB(255, 255, 255)
+sa.TextScaled = true
+sa.TextSize = 14.000
+sa.TextWrapped = true
+
+UICorner_2.Parent = sa
+
+executespeed.Name = "executespeed"
+executespeed.Parent = Frame
+executespeed.BackgroundColor3 = Color3.fromRGB(2, 255, 40)
+executespeed.Position = UDim2.new(0.0560420305, 0, 0.397119343, 0)
+executespeed.Size = UDim2.new(0, 506, 0, 50)
+executespeed.Font = Enum.Font.SourceSans
+executespeed.Text = "Execute"
+executespeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+executespeed.TextScaled = true
+executespeed.TextSize = 14.000
+executespeed.TextWrapped = true
+
+UICorner_3.Parent = executespeed
+
+ja.Name = "ja"
+ja.Parent = Frame
+ja.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+ja.Position = UDim2.new(0.0420315228, 0, 0.259259254, 0)
+ja.Size = UDim2.new(0, 525, 0, 38)
+ja.ClearTextOnFocus = false
+ja.Font = Enum.Font.SourceSans
+ja.Text = "JumpPower Amount"
+ja.TextColor3 = Color3.fromRGB(255, 255, 255)
+ja.TextScaled = true
+ja.TextSize = 14.000
+ja.TextWrapped = true
+
+UICorner_4.Parent = ja
